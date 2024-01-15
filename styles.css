@@ -1,0 +1,88 @@
+body {
+    background-image: url('./assets/background.jpg');
+	background-size: cover;
+}
+
+
+.enter-button-container {
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it's above other items */
+}
+
+.enter-button {
+    padding: 10px 20px;
+    background-color: #000; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	font-family: 'Roboto Mono', sans-serif;
+}
+
+.enter-button:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+.welcome-text {
+    position: fixed;
+    top: 30%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2em;
+    display: none; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 9;
+    font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	text-align: center;
+}
+
+.social-icons {
+    text-align: center; /* Center the icons container */
+    margin-top: 30%; /* Add some space between the text and icons */
+}
+
+.social-icons a {
+    margin: 0 7%; /* Add horizontal space between icons */
+    color: #fff; /* Set the color of the icons */
+    font-size: 24px; /* Set the size of the icons */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-flex; /* Align icons and text labels */
+	flex-direction: column;
+    align-items: center; /* Center align items vertically */
+    gap: 8px; /* Space between icon and label */
+}
+
+.social-icons a i {
+    transition: transform 0.5s ease; /* Smooth transition for the transform property */
+}
+
+.social-icons a:hover {
+    color: #ccc; /* Change color on hover */
+	transform: scale(1.2);
+}
+
+.icon-label {
+    font-family: 'Roboto Mono', sans-serif; /* Match the font with your style */
+    font-size: 0.8em; /* Adjust label font size as needed */
+    color: #fff; /* Label text color */
+}
+
+.icon-enter-animation {
+    /* Initial state of the icons, hidden */
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* This class will be added via JavaScript to trigger the animation */
+.icon-animation-visible {
+    display: block; /* Make icons visible */
+    opacity: 1; /* Make icons fully visible */
+    animation: animate__animated animate__fadeInUp 1s; /* Animate.css fadeInUp animation */
+}
