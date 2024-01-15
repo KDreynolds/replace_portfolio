@@ -42,4 +42,19 @@ document.addEventListener('DOMContentLoaded', function() {
         var aboutMePopup = document.getElementById('aboutMePopup');
         aboutMePopup.style.display = 'none'; // Hide the popup
     });
+
+    // Event listener for the Projects link
+    var projectsLink = document.getElementById('projectsLink'); // Make sure this ID matches your Projects link ID
+    projectsLink.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        var projectsPopup = document.getElementById('projectsPopup');
+        projectsPopup.style.display = 'flex'; // Show the popup
+    });
+
+    // Event listener for the close button in the Projects popup
+    var projectsCloseButton = document.querySelector('#projectsPopup .close-button');
+    projectsCloseButton.addEventListener('click', function() {
+        var projectsPopup = document.getElementById('projectsPopup');
+        projectsPopup.style.display = 'none'; // Hide the popup
+    });
 });

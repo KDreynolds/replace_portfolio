@@ -119,3 +119,36 @@ body {
     font-size: 1.5em;
     cursor: pointer;
 }
+
+.project-list {
+    display: flex; /* Use flexbox to layout children */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+  }
+  
+  .project-link {
+    flex: 0 1 calc(25% - 20px); /* Each item will take up 25% of the container width minus the gap */
+    text-align: center; /* Center the text below the image */
+    margin-bottom: 20px; /* Adds some space below each project */
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .project-thumbnail {
+    width: 100%; /* Make the image responsive within the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  
+  .project-title {
+    font-size: 1em; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the title text bold */
+  }
+
+  .project-description {
+    font-size: 0.9em; /* Adjust the size as needed */
+    color: #666; /* A light gray color for the text, adjust as needed */
+    margin-top: 5px; /* Space between the title and the description */
+    text-align: center; /* Center the text below the title */
+  }

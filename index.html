@@ -29,7 +29,7 @@
 					<i class="fa-solid fa-user"></i>
 					<span class="icon-label">About Me</span>
 				</a>
-				<a href="https://linkedin.com/in/yourusername" target="_blank">
+				<a href="#" id="projectsLink">
 					<i class="fa-solid fa-keyboard"></i>
 					<span class="icon-label">Projects</span>
 				</a>
@@ -67,6 +67,35 @@
 						My journey from a skateboarder to a Full Stack Software Engineer epitomizes my belief in the power of persistence and embracing the process. Let's connect to drive innovation in the tech world.</p>
 				</div>
 			</div>
+				<!-- Projects Popup container -->
+				<div id="projectsPopup" class="popup-container" style="display: none;">
+					<div class="popup-content">
+						<span class="close-button">&times;</span>
+						<h1>Projects</h1>
+						<div class="project-list">
+							<a href="https://www.hotmixer.space" target="_blank" class="project-link">
+								<img src="https://api.microlink.io/?url=https://www.hotmixer.space&screenshot=true&width=300&height=200&embed=screenshot.url" alt="Project 1 Thumbnail" class="project-thumbnail">
+								<span class="project-title">HoTMiXer.Space</span>
+								<p class="project-description">Versatile command-line tool designed to streamline the process of starting new web projects. Leveraging the power of HTMX along with various backend technologies such as Flask, Gin, and Node.js.</p>
+							</a>
+							<a href="https://www.hencode.dev" target="_blank" class="project-link">
+								<img src="https://api.microlink.io/?url=https://www.hencode.dev&screenshot=true&embed=screenshot.url" alt="Project 1 Thumbnail" class="project-thumbnail">
+								<span class="project-title">Hencode.Dev</span>
+								<p class="project-description">Educational site allowing users to quickly encode and decode data in different formats including Base64, Hexidecimal, URL and binary. Frontend built with VueJS, backend built with FastAPI.</p>
+							</a>
+							<a href="https://github.com/KDreynolds/godotgame" target="_blank" class="project-link">
+								<img src="https://api.microlink.io/?url=https://github.com/kdreynolds/godotgame&screenshot=true&embed=screenshot.url" alt="Project 1 Thumbnail" class="project-thumbnail">
+								<span class="project-title">Grav Runner - Godot video game</span>
+								<p class="project-description">Infinite runner video game created with Godot 3.5 open source video game engine. Grav Runner procedurally creates the level as the user progresses, getting harder every second you manage to stay alive.</p>
+							</a>
+							<a href="https://github.com/KDreynolds/CobolChainLedger" target="_blank" class="project-link">
+								<img src="https://api.microlink.io/?url=https://github.com/kdreynolds/CobolChainLedger&screenshot=true&embed=screenshot.url" alt="Project 1 Thumbnail" class="project-thumbnail">
+								<span class="project-title">CobolChainLedger</span>
+								<p class="project-description">Integrates a COBOL-based financial transaction ledger with a Python-implemented blockchain to provide an immutable record of financial transactions. This ensures that all entries in the ledger can be audited with confidence, as each transaction is recorded in a block within the blockchain, which is then linked to previous transactions, creating a secure chain of records.</p>
+							</a>
+						</div>
+					</div>
+				</div>
 			
 			  
 		</body>		
