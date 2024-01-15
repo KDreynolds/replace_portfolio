@@ -37,8 +37,7 @@
 					<i class="fa-solid fa-pen-to-square"></i>
 					<span class="icon-label">Blog</span>
 				</a>
-				<!-- Assuming the last icon is for a personal website or similar -->
-				<a href="https://yourwebsite.com" target="_blank">
+				<a href="#" id="contactMeLink">
 					<i class="fa-solid fa-link"></i>
 					<span class="icon-label">Contact Me</span>
 				</a>
@@ -94,6 +93,24 @@
 								<p class="project-description">Integrates a COBOL-based financial transaction ledger with a Python-implemented blockchain to provide an immutable record of financial transactions. This ensures that all entries in the ledger can be audited with confidence, as each transaction is recorded in a block within the blockchain, which is then linked to previous transactions, creating a secure chain of records.</p>
 							</a>
 						</div>
+					</div>
+				</div>
+				<div id="contactMePopup" class="popup-container" style="display: none;">
+					<div class="popup-content">
+						<span class="close-button">&times;</span>
+						<h1>Contact Me</h1>
+						<form action="https://formspree.io/f/xyyrzdon" method="POST" id="contactForm">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required>
+				
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="_replyto" required>
+				
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required></textarea>
+				
+							<button type="submit">Send</button>
+						</form>
 					</div>
 				</div>
 			
