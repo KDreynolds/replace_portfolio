@@ -9,12 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var projectsPopup = document.getElementById('projectsPopup');
     var contactMeButton = document.getElementById('contactMeLink');
     var contactMePopup = document.getElementById('contactMePopup');
+    var skillsLink = document.getElementById('skillsLink');
+    var skillsPopup = document.getElementById('skillsPopup');
+    var socialIconsSmall = document.getElementById('socialIconsSmall');
 
     enterButton.addEventListener('click', function(e) {
         e.preventDefault();
         buttonContainer.style.display = 'none';
         welcomeText.classList.add('animate__animated', 'animate__fadeInDown');
         welcomeText.style.display = 'block';
+        socialIconsSmall.style.display = 'flex';
+        socialIconsSmall.classList.add('animate__animated', 'animate__fadeInUp');
         setTimeout(function() {
             welcomeText.style.opacity = '1';
         }, 100);
@@ -29,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
     aboutMeLink.addEventListener('click', function(e) {
         e.preventDefault();
         aboutMePopup.style.display = 'flex';
+    });
+
+    skillsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        skillsPopup.style.display = 'flex';
     });
 
     projectsLink.addEventListener('click', function(e) {
